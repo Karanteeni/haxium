@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Haxium</title>
+		<link href="main.css" rel="stylesheet">
+		<meta name="author" content="ZD0">
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+		<script>
+			var stock = ["ZD0", "PekoniSoturi", "AlinaAlexa", "DarkDogPvP", "ede500", "hede900", "Hourzz", "Juusdo", "L4pc_games", "marinahillo", "MrPeruna", "MysteeriMies", "nnya", "rau88", "Rv_xt", "SanttuK05", "SCP_96", "StupidTv", "the3hero", "VJJ_", "Wiljamarja"];
+		</script>
+	</head>
+	<body>
+		<div class="center">
+			<div class="hero">
+			
+			</div>
+			<div class="nav block">
+				<h1 style="display: inline-block; font-size: 35px;">Haxium</h1>
+				<div class="navitem" onclick="window.location='asunnot';">Vapaat asunnot</div>
+				<div class="navitem" onclick="window.location='asukkaat';">Asukkaat</div>
+				<div class="navitem" onclick="window.location='saannot';">Säännöt</div>
+				<div class="navitem" onclick="window.location='/';">Etusivu</div>
+				
+				
+			</div>
+			<div class="content block" style="margin-top: 20px;">
+				<div class="title">	
+					<h1>Asukkaat</h1>
+				</div>
+				<p>
+					<table>
+						<tr>
+							<td style="min-width: 200px;">
+								<table id="asukkaat" style="max-height: 200px;"></table>
+							</td>
+							<td style="vertical-align: top;">
+								<p style="font-size: 18px;">
+								Kylässä on tällä hetkellä <b id="asukasluku">?</b> asukasta. Asukkaisiin lasketaan kaikki, jotka omistavat oikeudet kylän suojatulle alueelle. Kaikilla ei ole välttämättä taloa, mutta suurimmalla osalla on.
+								</p><br>
+								<h2>Kylän ylläpito:</h2>
+								<p>
+									<span class="karvo">Omistaja</span> <B>ZD0</B> <br>
+								<span class="karvo">Valvoja</span> <B>PekoniSoturi</B> 
+								</p>
+							</td>
+						</tr>
+					</table>
+				</p>
+					<script>
+			var tableBody = document.getElementById('asukkaat');
+			document.getElementById('asukasluku').innerHTML = stock.length;
+		for (i = 0; i < stock.length; i++) {
+		var tr = document.createElement('TR');
+
+			var td = document.createElement('TD'); //stock[i]
+			var img = document.createElement('IMG');
+			img.src = 'https://minotar.net/helm/' + stock[i] + '/32';
+			td.appendChild(img);
+			
+			tr.appendChild(td);
+			var td = document.createElement('TD'); //stock[i]
+			td.appendChild(document.createTextNode(stock[i]));
+			tr.appendChild(td);
+			
+		tableBody.appendChild(tr);
+	}
+		</script>
+			</div>
+			<div class="copy"></div>
+		</div>
+	</body>
+</html>

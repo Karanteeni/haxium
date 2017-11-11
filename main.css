@@ -1,0 +1,86 @@
+table { page-break-inside:auto;  }
+   tr    { page-break-inside:avoid; page-break-after:auto }
+
+.hero {
+	background-image:url('hero.png');
+	width: 100%;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+body {
+	margin: 20px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	background-image: url('bg.png');
+}
+
+.nav {
+	margin-top: 0;
+	
+	height: 40px;
+	line-height: 40px;
+	
+}
+
+h1 {
+	margin:0;
+	font-weight: normal;
+}
+
+.block {
+	background-color: white;
+	padding: 20px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.navitem {
+	display: inline-block;
+	float: right;
+	padding: 0;
+	background-color: darkseagreen;
+	border-radius: 2px;
+	margin-left: 6px;
+	cursor: pointer;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: background-color 0.2s;
+}
+.navitem:hover {
+	background-color: seagreen;
+}
+
+.title {
+	padding: 15px;
+	background-color: forestgreen;
+	color: white;
+}
+.title h1 {
+	font-size: 18px;
+}
+
+p {
+	font-size: 19px;
+}
+
+.karvo {
+	display: inline-block;
+	width: 80px;
+	color: #888888;
+}
+
+h2 {
+	color: forestgreen;
+}
+
+.copy {margin-top: 20px;}
+.copy:after {
+	color: rgba(0,0,0,0.7);
+	content: 'Haxium © ZD0';
+	font-size: 17px;
+}
